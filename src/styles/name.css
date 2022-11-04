@@ -1,0 +1,13 @@
+#name-box {
+  gap: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  #name-box {
+    gap: 2rem;
+  }
+
+  #name-text {
+    font-size: 2.8rem;
+  }
+}

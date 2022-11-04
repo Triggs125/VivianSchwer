@@ -62,19 +62,25 @@ const theme = createTheme({
   shadows: constants.shadows,
   components: {
     MuiTypography: {
+      styleOverrides: {
+        root: {
+          fontFamily: "unset"
+        }
+      },
       variants: [
         {
           props: { variant: 'h1' },
           style: {
             fontSize: '3.052rem',
-            fontWeight: 600
+            fontWeight: 600,
+            textDecoration: 'underline'
           },
         },
         {
           props: { variant: 'h2' },
           style: {
             fontSize: '2.441rem',
-            fontWeight: 500
+            fontWeight: 600
           },
         },
         {
