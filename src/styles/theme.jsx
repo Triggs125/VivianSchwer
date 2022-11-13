@@ -5,9 +5,10 @@ const constants = {
     primary: '#abc',
     secondary: '#bbb',
     disabled: '#555',
-    background: '#fff',
+    background: '#D9D9D9',
     dark: '#000',
-    light: '#333'
+    light: '#333',
+    linkedin: '#0077B5',
   },
   shadows: [
     'none',
@@ -57,6 +58,9 @@ const theme = createTheme({
     },
     background: {
       default: constants.colors.background
+    },
+    icons: {
+      linkedin: constants.colors.linkedin
     }
   },
   shadows: constants.shadows,
@@ -71,9 +75,8 @@ const theme = createTheme({
         {
           props: { variant: 'h1' },
           style: {
-            fontSize: '3.052rem',
-            fontWeight: 600,
-            textDecoration: 'underline'
+            fontSize: '3.8rem',
+            fontWeight: 600
           },
         },
         {

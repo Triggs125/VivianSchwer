@@ -1,0 +1,47 @@
+#experience .mui-image-img {
+  max-height: 180px;
+  width: unset !important;
+  height: unset !important;
+}
+
+#experience .mui-image-wrapper {
+  width: unset !important;
+  height: unset !important;
+}
+
+#experience .experience-item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#experience .experience-text-date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 770px) {
+  #experience #experience-wrapper {
+    gap: 1rem;
+  }
+
+  #experience .experience-item {
+    gap: 1rem !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #experience .experience-text {
+    gap: 1rem;
+  }
+
+  #experience .experience-text-date {
+    justify-content: center;
+  }
+}
