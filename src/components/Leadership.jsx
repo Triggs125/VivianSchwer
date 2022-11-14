@@ -14,7 +14,7 @@ export const Leadership = () => {
           flexWrap='wrap'
         >
           <Card
-            name="Phi Lambda Sigma"
+            name="Phi Lambda Sigma, Beta Eta Chapter"
             title="Secretary"
             start="May 2022"
             end="May 2023"

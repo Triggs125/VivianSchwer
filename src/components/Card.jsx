@@ -1,27 +1,19 @@
 import { Box, Typography } from "@mui/material";
 import Image from "mui-image";
 import { theme } from "../styles/theme";
+import "../styles/card.css";
 
 export const Card = ({ imgSrc, name, title, start, end }) => {
   return (
     <Box
+      className="card"
       sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        flexWrap: 'wrap',
-        gap: '2rem',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backgroundColor: 'white',
-        overflow: 'hidden',
-        padding: '1rem',
-        borderRadius: '1rem',
-        boxShadow: theme.shadows[4],
-        maxWidth: '500px',
-        width: '100%'
+        boxShadow: theme.shadows[4]
       }}
     >
-      {imgSrc && <Image src={imgSrc} iconWrapperStyle={{ display: "hidden" }} />}
+      {imgSrc && (
+        <Image src={imgSrc} fit="cover" />
+      )}
       <Typography variant="h2" textAlign="center">
         {name}
       </Typography>

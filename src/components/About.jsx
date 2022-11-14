@@ -1,6 +1,8 @@
 import { Box, Button, Container, Typography } from "@mui/material"
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { theme } from "../styles/theme"
+import Image from "mui-image";
+import linkedin from '../assets/linkedin.png';
+import gmail from '../assets/Gmail-Logo.png';
 
 export const About = () => {
   return (
@@ -11,7 +13,8 @@ export const About = () => {
           display: "flex",
           flexDirection: "column",
           justifyItems: "center",
-          gap: '1rem'
+          alignItems: "center",
+          gap: '2rem'
         }}
       >
         <Typography
@@ -24,15 +27,48 @@ export const About = () => {
           interested in pursuing a residency. I have over two years of hospital experience. 
           I enjoy interprofessional collaboration to seek out the best individualized care for patients!
         </Typography>
-        <Button
-          variant="text"
-          href="https://www.linkedin.com/in/vivianschwer/"
-          target="_blank"
-          sx={{ padding: 0 }}
-          title="LinkedIn"
+        <Box
+          display="flex"
+          flexDirection="row"
+          gap="2rem"
         >
-          <LinkedInIcon sx={{ fontSize: '4rem', color: theme.palette.icons.linkedin }} />
-        </Button>
+          <Button
+            variant="text"
+            href="https://www.linkedin.com/in/vivianschwer/"
+            target="_blank"
+            sx={{ padding: 0, width: '4rem' }}
+            title="LinkedIn"
+          >
+            <Image
+              src={linkedin}
+              style={{
+                height: 'unset!important',
+                borderRadius: 8,
+                boxShadow: theme.shadows[3]
+              }}
+            />
+          </Button>
+          <Button
+            variant="text"
+            href="mailto:vivianschwer@gmail.com"
+            target="_blank"
+            sx={{
+              padding: 0,
+              width: '3rem'
+            }}
+            title="Email me!"
+          >
+            <Image
+              src={gmail}
+              style={{
+                height: 'unset!important',
+                backgroundColor: 'white',
+                borderRadius: 8,
+                boxShadow: theme.shadows[3]
+              }}
+            />
+          </Button>
+        </Box>
       </Box>
     </Container>
   )

@@ -31,32 +31,6 @@ export const Education = () => {
           start="August 2016"
           end="May 2019"
         />
-        {/* <Box className="education-item" boxShadow={theme.shadows[4]}>
-          <Image src={umkc_pharmacy} iconWrapperStyle={{ display: "hidden" }} />
-          <Box className="education-text" display='flex' flexDirection='column'>
-            <Typography variant="h2">
-              University of Missouri - Kansas City School of Pharmacy
-            </Typography>
-            <Typography variant="h3">Doctor of Pharmacy</Typography>
-            <Typography variant="h3" className="education-text-date">
-              <Box>Anticipated&nbsp;</Box>
-              <Box>May 2023</Box>
-            </Typography>
-          </Box>
-        </Box>
-        <Box className="education-item" boxShadow={theme.shadows[4]}>
-          <Image src={siue} iconWrapperStyle={{ display: "hidden" }} />
-          <Box className="education-text" display='flex' flexDirection='column'>
-            <Typography variant="h2">
-              Southern Illinois University of Edwardsville
-            </Typography>
-            <Typography variant="h3">Undergraduate Pre-Pharmacy Coursework</Typography>
-            <Typography variant="h3" className="education-text-date">
-              <Box>August 2016 -&nbsp;</Box>
-              <Box>May 2019</Box>
-            </Typography>
-          </Box>
-        </Box> */}
       </Box>
     </Container>
   )

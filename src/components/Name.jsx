@@ -96,7 +96,7 @@ export const Name = () => {
       >
         <Typography
           id="name-text"
-          variant="h1"
+          variant="h2"
           sx={{
             paddingY: 0.5,
             marginX: '1rem',

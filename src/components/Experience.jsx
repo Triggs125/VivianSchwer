@@ -10,7 +10,7 @@ export const Experience = () => {
       <Typography variant="h1" textAlign='center'>Experience</Typography>
       <Box id="experience-wrapper" display="flex" gap="2rem" flexDirection="column">
         <Box className="experience-item" boxShadow={theme.shadows[4]}>
-          <Image src={university_health} iconWrapperStyle={{ display: "hidden" }} />
+          <Image id="experience-image" src={university_health} fit="cover" />
           <Box className="experience-text" display='flex' flexDirection='column'>
             <Typography variant="h2" display="flex" flexDirection="row" flexWrap="wrap">
               <Box width="100%">University Health&nbsp;</Box>

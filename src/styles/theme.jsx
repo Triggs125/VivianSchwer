@@ -76,7 +76,8 @@ const theme = createTheme({
           props: { variant: 'h1' },
           style: {
             fontSize: '3.8rem',
-            fontWeight: 600
+            fontWeight: 600,
+            marginTop: '-2rem'
           },
         },
         {

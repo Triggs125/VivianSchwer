@@ -25,6 +25,10 @@
   flex-wrap: wrap;
 }
 
+#experience #experience-image {
+  padding-left: 1rem;
+}
+
 @media screen and (max-width: 770px) {
   #experience #experience-wrapper {
     gap: 1rem;
@@ -43,5 +47,9 @@
 
   #experience .experience-text-date {
     justify-content: center;
+  }
+
+  #experience #experience-image {
+    padding-left: 0;
   }
 }
