@@ -105,7 +105,6 @@ export const Name = () => {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             textAlign: 'center',
-            fontFamily: 'cursive',
             fontSize: stickyAttributes.fontSize
           }}
         >

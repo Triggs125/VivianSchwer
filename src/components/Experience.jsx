@@ -7,7 +7,7 @@ import university_health from "../assets/university-health.png";
 export const Experience = () => {
   return (
     <Container id="experience" sx={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-      <Typography className="section-header" variant="h1" textAlign='center'>Experience</Typography>
+      <Typography variant="h1" textAlign='center'>Experience</Typography>
       <Box id="experience-wrapper" display="flex" gap="2rem" flexDirection="column">
         <Box className="experience-item" boxShadow={theme.shadows[4]}>
           <Image src={university_health} iconWrapperStyle={{ display: "hidden" }} />

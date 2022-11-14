@@ -1,15 +1,14 @@
 import { Box, Container, Typography } from "@mui/material"
-import Image from "mui-image"
 import "../styles/education.css";
-import { theme } from "../styles/theme";
 
 import umkc_pharmacy from "../assets/umkc-pharmacy.jpg";
 import siue from "../assets/SIUE.svg-400x400-1493625252";
+import { Card } from "./Card";
 
 export const Education = () => {
   return (
     <Container id="education" sx={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-      <Typography className="section-header" variant="h1" textAlign='center'>Education</Typography>
+      <Typography variant="h1" textAlign='center'>Education</Typography>
       <Box
         id="education-wrapper"
         display="flex"
@@ -18,7 +17,21 @@ export const Education = () => {
         justifyContent='center'
         flexWrap='wrap'
       >
-        <Box className="education-item" boxShadow={theme.shadows[4]}>
+        <Card
+          imgSrc={umkc_pharmacy}
+          name="University of Missouri - Kansas City School of Pharmacy"
+          title="Doctor of Pharmacy"
+          start="Anticipated"
+          end="May 2023"
+        />
+        <Card
+          imgSrc={siue}
+          name="Southern Illinois University of Edwardsville"
+          title="Undergraduate Pre-Pharmacy Coursework"
+          start="August 2016"
+          end="May 2019"
+        />
+        {/* <Box className="education-item" boxShadow={theme.shadows[4]}>
           <Image src={umkc_pharmacy} iconWrapperStyle={{ display: "hidden" }} />
           <Box className="education-text" display='flex' flexDirection='column'>
             <Typography variant="h2">
@@ -43,7 +56,7 @@ export const Education = () => {
               <Box>May 2019</Box>
             </Typography>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </Container>
   )

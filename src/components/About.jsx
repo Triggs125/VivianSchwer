@@ -8,9 +8,6 @@ export const About = () => {
       <Box
         sx={{
           padding: "1rem",
-          // backgroundColor: "white",
-          // borderRadius: 1,
-          // boxShadow: theme.shadows[1],
           display: "flex",
           flexDirection: "column",
           justifyItems: "center",
@@ -29,7 +26,7 @@ export const About = () => {
         </Typography>
         <Button
           variant="text"
-          href="https://www.linkedin.com/in/vivian-marie-schwer-41a0561ab/"
+          href="https://www.linkedin.com/in/vivianschwer/"
           target="_blank"
           sx={{ padding: 0 }}
           title="LinkedIn"

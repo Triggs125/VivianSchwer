@@ -6,6 +6,7 @@ import { theme } from "../styles/theme";
 import "../styles/home.css";
 import { Experience } from "../components/Experience";
 import { Leadership } from "../components/Leadership";
+import { Organizations } from "../components/Organizations";
 
 export const Home = () => {
   document.body.style.backgroundColor = theme.palette.background.default;
@@ -20,6 +21,8 @@ export const Home = () => {
       <Experience />
       <hr />
       <Leadership />
+      <hr />
+      <Organizations />
     </Box>
   );
 }
