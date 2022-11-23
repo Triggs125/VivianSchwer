@@ -2,7 +2,7 @@ import { Box, Container, Typography } from "@mui/material"
 import "../styles/education.css";
 
 import umkc_pharmacy from "../assets/umkc-pharmacy.jpg";
-import siue from "../assets/SIUE.svg-400x400-1493625252";
+import siue from "../assets/SIUE.png";
 import { Card } from "./Card";
 
 export const Education = () => {

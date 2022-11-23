@@ -10,7 +10,17 @@
   padding: 1rem;
   border-radius: 1rem;
   max-width: 525px;
-  width: '100%';
+  width: 100%;
+}
+
+.card .mui-image-wrapper {
+  width: unset !important;
+  height: unset !important;
+  display: block !important;
+}
+
+.card .mui-image-img {
+  max-height: 180px;
 }
 
 @media screen and (max-width: 770px) {

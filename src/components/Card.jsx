@@ -3,16 +3,17 @@ import Image from "mui-image";
 import { theme } from "../styles/theme";
 import "../styles/card.css";
 
-export const Card = ({ imgSrc, name, title, start, end }) => {
+export const Card = ({ imgSrc, name, title, start, end, sx }) => {
   return (
     <Box
       className="card"
       sx={{
-        boxShadow: theme.shadows[4]
+        boxShadow: theme.shadows[4],
+        ...sx
       }}
     >
       {imgSrc && (
-        <Image src={imgSrc} fit="cover" />
+        <Image src={imgSrc} fit="cover" decoding="sync" />
       )}
       <Typography variant="h2" textAlign="center">
         {name}
